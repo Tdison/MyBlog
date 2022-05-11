@@ -1391,7 +1391,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: https://cdn.jsdelivr.net/gh/tdison/tdison.github.io@main/img/background.jpg;
+  background: /img/background.jpg;
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
