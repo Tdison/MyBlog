@@ -18,6 +18,7 @@
 /* 首页侧栏卡片 */
 .card-widget{
   background:rgba(255,255,255,0.6)!important;
+  backdrop-filter: saturate(100%) blur(5px);
 }
 [data-theme="dark"] .card-widget{
   background:rgba(0,0,0,.6)!important;
@@ -33,6 +34,7 @@ div#post{
 /* 分页页面 */
 div#page{
   background: rgba(255,255,255,0.6);
+  backdrop-filter: saturate(100%) blur(5px);
 }
 [data-theme="dark"] div#page{
   background: rgba(0,0,0,.6);
@@ -41,6 +43,7 @@ div#page{
 /* 归档页面 */
 div#archive{
   background: rgba(255,255,255,0.6);
+  backdrop-filter: saturate(100%) blur(5px);
 }
 [data-theme="dark"] div#archive{
   background: rgba(0,0,0,.6);
@@ -49,6 +52,7 @@ div#archive{
 /* 标签页面 */
 div#tag{
   background: rgba(255,255,255,0.6);
+  backdrop-filter: saturate(100%) blur(5px);
 }
 [data-theme="dark"] div#tag{
   background: rgba(0,0,0,.6);
@@ -57,6 +61,7 @@ div#tag{
 /* 分类页面 */
 div#category{
   background: rgba(255,255,255,0.6);
+  backdrop-filter: saturate(100%) blur(5px);
 }
 [data-theme="dark"] div#category{
   background: rgba(0,0,0,.6);
@@ -174,4 +179,28 @@ i:hover{
   100% {
     -webkit-filter: blur(0px);
   }
+}
+
+@font-face{
+  font-family:'Candyhome' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+h1#site-title {
+  font-family: 'Candyhome', sans-serif;
+}
+
+h1.post-title {
+  font-family: 'Candyhome';
+}
+
+@font-face{
+  font-family:'fontbody' ;  /* 字体名自定义即可 */
+  src:url('/fonts/body.ttc'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+body {
+    font-family: 'fontbody';
 }
