@@ -8,7 +8,7 @@ ul.categoryBar-list {
 li.categoryBar-list-item {
   font-weight: bold;
   display: inline-block;
-  height: 180px !important;
+  height: 170px !important;
   margin: 5px 0.5% 0 0.5% !important;
   background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   border-radius: 10px;
