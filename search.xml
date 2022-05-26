@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Mac终端美化</title>
+      <link href="/2022/05/26/Mac%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/"/>
+      <url>/2022/05/26/Mac%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="安装OneHalfDark主题"><a href="#安装OneHalfDark主题" class="headerlink" title="安装OneHalfDark主题"></a>安装OneHalfDark主题</h3><ul><li><p>下载OneHalfDark：</p><p>作者Github地址：<a href="https://github.com/sonph/onehalf">https://github.com/sonph/onehalf</a></p></li><li><p>解压后打开<code>./terminal/OneHalfDark.terminal</code>文件</p></li></ul><p><strong>自定义配置</strong></p><ul><li>在终端界面按下<code>⌘+,</code>打开终端偏好设置。</li></ul><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h2lm1p2novj20wk0u0tbz.jpg"></p><h3 id="安装oh-my-zsh"><a href="#安装oh-my-zsh" class="headerlink" title="安装oh-my-zsh"></a>安装oh-my-zsh</h3><p><strong>curl 安装</strong></p><p><strong>GitHub</strong>:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure><p><strong>Gitee ( 国内镜像 )</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure><p><strong>wget 安装</strong></p><p><strong>GitHub</strong>:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;</span><br></pre></td></tr></table></figure><p><strong>Gitee ( 国内镜像 )</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(wget -O- https://gitee.com/pocmon/mirrors/raw/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure><h3 id="安装powerlevel10k"><a href="#安装powerlevel10k" class="headerlink" title="安装powerlevel10k"></a>安装powerlevel10k</h3><p><strong>GitHub地址：<a href="https://github.com/romkatv/powerlevel10k">https://github.com/romkatv/powerlevel10k</a></strong></p><ol><li><p>安装字体</p><ul><li><a href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf">MesloLGS NF Regular.ttf</a></li><li><a href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf">MesloLGS NF Bold.ttf</a></li><li><a href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf">MesloLGS NF 斜体.ttf</a></li><li><a href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf">MesloLGS NF 粗体斜体.ttf</a></li></ul></li><li><p>安装powerlevel10k：</p><p><strong>GitHub</strong>:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $&#123;ZSH\_CUSTOM:-$HOME/.oh-my-zsh/custom&#125;/themes/powerlevel10k</span><br></pre></td></tr></table></figure><p><strong>Gitee ( 国内镜像 )</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git $&#123;ZSH\_CUSTOM:-$HOME/.oh-my-zsh/custom&#125;/themes/powerlevel10k</span><br></pre></td></tr></table></figure></li><li><p>在<code>~/.zshrc</code>中设置<code>ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;</code>.</p></li><li><p>配置字体</p><ul><li><strong>iTerm2</strong>: 当被问及是否安装Meslo Nerd字体时，键入 <code>p10k configure</code> 并回答 <code>Yes</code> 。或者，打开iTerm2→首选项→配置文件→文本，并将字体设置为 <code>MesloLGS NF</code>。</li><li><strong>Apple Terminal</strong>: 打开终端→首选项→配置文件→文本，单击字体下的更改，然后选择 <code>MesloLGS NF</code> 系列。</li></ul></li><li><p>配置powerlevel10k</p><ul><li><p>重启终端后，Powerlevel10k配置向导会自动运行。如果没有自动运行，手动输入<code>p10k configure</code>运行。</p></li><li><p>修改<code>~/.p10k.zsh</code>文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">typeset</span> -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(   <span class="comment">#搜索此行</span></span><br><span class="line">  os_icon                 <span class="comment"># os identifier</span></span><br><span class="line">  context                 <span class="comment"># user@hostname        #添加此行</span></span><br><span class="line">  <span class="built_in">dir</span>                     <span class="comment"># current directory</span></span><br></pre></td></tr></table></figure></li></ul></li></ol><h3 id="安装Zsh-autosuggestions插件"><a href="#安装Zsh-autosuggestions插件" class="headerlink" title="安装Zsh-autosuggestions插件"></a>安装<code>Zsh-autosuggestions</code>插件</h3><ul><li><p>根据历史记录和完成建议您键入的命令</p><p><strong>GitHub地址：<a href="https://github.com/zsh-users/zsh-autosuggestions">https://github.com/zsh-users/zsh-autosuggestions</a></strong></p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h2lm2wsqm6g20oq01879r.gif"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions</span><br></pre></td></tr></table></figure></li><li><p>将插件添加到 Oh My Zsh 加载的插件列表（<code>~/.zshrc</code>）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">plugins=( </span><br><span class="line">    <span class="comment"># other plugins...</span></span><br><span class="line">    zsh-autosuggestions</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li></ul><h3 id="安装zsh-syntax-highlighting插件"><a href="#安装zsh-syntax-highlighting插件" class="headerlink" title="安装zsh-syntax-highlighting插件"></a>安装<code>zsh-syntax-highlighting</code>插件</h3><ul><li><p>语法高亮。当命令在 zsh 提示符下输入交互式终端时，它可以突出显示命令。这有助于在运行命令之前检查命令错误。</p><p><strong>GitHub地址：<a href="https://github.com/zsh-users/zsh-syntax-highlighting">https://github.com/zsh-users/zsh-syntax-highlighting</a></strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;/plugins/zsh-syntax-highlighting</span><br></pre></td></tr></table></figure><p>将插件添加到 Oh My Zsh 加载的插件列表（<code>~/.zshrc</code>）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">plugins=( </span><br><span class="line">    <span class="comment"># other plugins...</span></span><br><span class="line">    zsh-syntax-highlighting</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> MacOS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MacOS </tag>
+            
+            <tag> zsh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OpenVPN部署</title>
       <link href="/2022/05/22/OpenVPN%E9%83%A8%E7%BD%B2/"/>
       <url>/2022/05/22/OpenVPN%E9%83%A8%E7%BD%B2/</url>
@@ -47,9 +74,9 @@
       
         <tags>
             
-            <tag> CENTOS </tag>
-            
             <tag> DNS </tag>
+            
+            <tag> CENTOS </tag>
             
         </tags>
       
@@ -99,9 +126,9 @@
       
         <tags>
             
-            <tag> CENTOS </tag>
-            
             <tag> DNS </tag>
+            
+            <tag> CENTOS </tag>
             
         </tags>
       
